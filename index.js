@@ -8,6 +8,8 @@ const DICES = {
   6: "dice_6.png",
 };
 
+console.log()
+
 // ---- DOM ELEMENTS ----
 const rollDiceBtn = document.getElementById("roll-dice-btn");
 const diceOne = document.getElementById("dice-one");
