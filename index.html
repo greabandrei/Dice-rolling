@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolling</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        #dice-rolling {
+            display: none;
+            width: 300px;
+            height: 220px;
+            margin: 10px;
+        }
+
+        #dice-one, #dice-two {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dice Rolling</h1>
+    <button id="roll-dice-btn">Roll Dice</button>
+    <div id="result">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2pvbmZzZTJzZWQ5N3ppdG90MzE5YTZvNDNxbTFzZGp1eHVyYWY1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohjUQzKZ0oGKPtwuQ/giphy.gif" alt="Dice Rolling" id="dice-rolling">
+        <img src="assets/dice_3.png" alt="Dice Image 1" id="dice-one">
+        <img src="assets/dice_3.png" alt="Dice Image 2" id="dice-two">
+    </div>
+    <div id="results">Results</div>
+    <script src="index.js"></script>
+</body>
+</html>
