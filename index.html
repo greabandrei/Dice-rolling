@@ -25,6 +25,12 @@
             
         }
         img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        img#list{
             width: 15px;
             height: 15px;
             margin: 1px;
@@ -42,12 +48,9 @@
         }
 
         #results {
-            display:inline-flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             font-family: Arial, Helvetica, sans-serif;
             padding: 10px;
+            margin-right: -299px;
         }
 
         #ul{
@@ -81,7 +84,10 @@
         }
 
         #game{
-            padding: 10px;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content:center;
         }
        
         
@@ -101,16 +107,16 @@
     <div id="results">
         <ul id="ul">
             <h1 id="title">Last 10 rolls</h1>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
-            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
+            <li><span id="time">11.02.2024 16:00</span><span>You rolled a <img id="list" src="assets/dice_1.png"> and <img id="list" src="assets/dice_2.png"></span></li>
         </ul>
     </div>
     <script src="index.js"></script>
