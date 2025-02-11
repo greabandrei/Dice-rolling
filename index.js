@@ -8,7 +8,6 @@ const DICES = {
   6: "dice_6.png",
 };
 
-
 // ---- DOM ELEMENTS ----
 const rollDiceBtn = document.getElementById("roll-dice-btn");
 const diceOne = document.getElementById("dice-one");
@@ -22,7 +21,6 @@ rollDiceBtn.addEventListener("click", rollDice);
 function delay(seconds) {
   return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
 }
-
 
 async function rollDice() {
   diceOne.style.display = "none";
@@ -39,18 +37,16 @@ async function rollDice() {
   diceRolling.style.display = "none";
   diceOne.style.display = "inline";
   diceTwo.style.display = "inline";
-
-  const results = document.createElement("section");  //create section for each result
-  const resultText = document.createTextNode([`You have a ${randomOne} and a ${randomTwo}`])  //generate text for each result
-  results.appendChild(resultText);  //attach text to the section
-  document.body.append(results)   //display the section with the text in DOM
+  
+  const storeResults = [];
+  storeResults.push([randomOne, randomTwo])
+  storeResults.style.display
 }
-
 
 // Here we will implement the logic for the results
 /*
-The results will be a list of the last 10 results
-The results will be displayed in the results div
-The results will be updated every time the dice is rolled
-The results will be displayed in the format of "You rolled a [result] and [result]"
+    The results will be a list of the last 10 results
+    The results will be displayed in the results div
+    The results will be updated every time the dice is rolled
+    The results will be displayed in the format of "You rolled a [result] and [result]"
 */
