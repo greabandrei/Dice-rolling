@@ -23,9 +23,9 @@
             cursor: pointer;
         }
         img {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
+            width: 15px;
+            height: 15px;
+            margin: 1px;
         }
 
         #dice-rolling {
@@ -40,11 +40,30 @@
         }
 
         #results {
-            text-align:start;
+            padding-left: 50%;
             font-size: larger;
             font-family: Georgia, 'Times New Roman', Times, serif;
          
         }
+
+        #ul{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        ul{
+            list-style:;
+            background-color: rgb(144, 206, 248);
+        }
+
+        li{
+            background-color: rgb(204, 200, 200);
+            margin: 2px;
+        }
+
+       
+
+     
+
     </style>
 </head>
 <body>
@@ -56,18 +75,18 @@
         <img src="assets/dice_3.png" alt="Dice Image 2" id="dice-two">
     </div>
     <div id="results">
-        <ol>
-            <li>Result</li>
-            <li>Result</li>
-            <li>Result</li>
-            <li>Result</li>
-            <li>Result</li>
-            <li>Result</li>
-            <li>Result</li>
-            <li>Result</li>
-            <li>Result</li>
-            <li>Result</li>
-        </ol>
+        <ul id="ul">
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+            <li>You rolled a <img src="assets/dice_1.png"> and <img src="assets/dice_2.png"></li>
+        </ul>
     </div>
     <script src="index.js"></script>
 </body>
