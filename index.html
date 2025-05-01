@@ -6,12 +6,13 @@
     <title>Dice Rolling</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
+            display:flex;
+            flex-direction:row;
             align-items: center;
-            justify-content: center;
+            justify-content:center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #ffffff;
+
         }
         button {
             padding: 10px 20px;
@@ -21,11 +22,18 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            
         }
         img {
             width: 100px;
             height: 100px;
             margin: 10px;
+        }
+
+        img#list{
+            width: 15px;
+            height: 15px;
+            margin: 1px;
         }
 
         #dice-rolling {
@@ -38,17 +46,70 @@
         #dice-one, #dice-two {
             display: none;
         }
+
+        #results {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            margin-right: -299px;
+        }
+
+        #ul{
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        ul{
+            list-style:none;
+            background-color: #007bff;
+            padding-inline-start: 5px;
+        }
+
+        li span{
+            background-color: rgb(235, 235, 235);
+            margin: 10px;
+            font-size: 15px;
+            padding: 1px;
+          
+        }
+
+        li span#time{
+            background-color: rgb(255, 234, 113);
+            margin: 5px;
+            padding: 1px;
+            font-size: 15px;
+        }
+
+        #title{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #game{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content:center;
+        }
+       
+        
+
     </style>
 </head>
 <body>
-    <h1>Dice Rolling</h1>
-    <button id="roll-dice-btn">Roll Dice</button>
-    <div id="result">
+    <div id="game">
+    <h1>Dice Rolling</h1>   
+     <button id="roll-dice-btn">Roll Dice</button>
+      <div id="result">
         <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2pvbmZzZTJzZWQ5N3ppdG90MzE5YTZvNDNxbTFzZGp1eHVyYWY1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohjUQzKZ0oGKPtwuQ/giphy.gif" alt="Dice Rolling" id="dice-rolling">
         <img src="assets/dice_3.png" alt="Dice Image 1" id="dice-one">
-        <img src="assets/dice_3.png" alt="Dice Image 2" id="dice-two">
+       <img src="assets/dice_3.png" alt="Dice Image 2" id="dice-two">
+      </div>
+     </div> 
+    <div id="results">
+        <ul id="ul">
+            <h1 id="title">Last 10 rolls</h1>
+            <div id="result-list"></div>
+        </ul>
     </div>
-    <div id="results">Results</div>
     <script src="index.js"></script>
 </body>
 </html>
